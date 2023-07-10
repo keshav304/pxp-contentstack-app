@@ -1,0 +1,202 @@
+.cardsContainer {
+    display: flex;
+    /* flex: 50%; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.cardsContainer>div:first-child {
+    width: 98%;
+    height: 490px;
+}
+.ReactModal__Overlay .ReactModal__Content .ReactModal__Content__body {
+    max-height: 82%;
+    overflow: auto;
+    padding: 1.25rem;
+    background: #F5F6F8;
+}
+.missionDetailPageContainer {
+    background-color: #EDF1F7;
+}
+.missionDetailPageHeading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+    padding-left: 1rem;
+    color: #90a0b7;
+}
+.tagSubHeading {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    color: #90a0b7;
+}
+.tagsRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tagsRow > button:focus {
+    padding: 0rem 1rem;
+    border: none;
+    outline: none;
+}
+.summaryRowContainer {
+    padding-right: 4.75rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    border: 1px solid;
+    border-color: rgba(25,42,62,.1);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.summaryRowTitle1Container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    color: #90a0b7;
+}
+.summaryTitleSpan {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #90a0b7;
+    
+}
+.summaryValueSpan {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #90a0b7;
+}
+.summaryRowTitle2Container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    color: #90a0b7;
+}
+.summaryRowRateContainer {
+    width: 7%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.switchViewContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    overflow-y: auto;
+}
+.switchViewButtonContainer {
+    display: flex;
+    border-radius: 1rem;
+    border-width: 1px;
+    border-color: #90a0b7;
+    border-style: solid;
+    margin-bottom: 1rem;
+}
+.switchViewPrimaryButton {
+    width: 50%;
+    border-radius: 1rem;
+    border-width: 2px;
+    border-color: #90a0b7;
+    border-style: solid;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0.4rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: normal;
+}
+.switchViewSecondryButton {
+    width: 50%;
+    border-radius: 1rem;
+    border-width: 2px;
+    border-color: #90a0b7;
+    border-style: solid;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-width: 0px;
+    padding: 0.4rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: normal;
+}
+.isInView {
+    background-color:#90a0b7;
+    color:#fff
+}
+.notInView {
+    color:#90a0b7;
+    background-color:#fff
+}
+.productsRowContainer {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    border-color: rgba(25,42,62,.1);
+    padding-right: 3.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    align-items: center;
+}
+.productsRowTitleContainer {
+    display: flex;
+    flex-direction: column;
+}
+.productsTitleSpan {
+    color: #192a3e;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0.2rem 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.productsCodeSpan {
+    color: #90a0b7;
+}
+.productsRowValueContainer {
+    color: #90a0b7;
+}
+.visitsAndOthersRowContainer {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    border-color: rgba(25,42,62,.1);
+    padding-right: 3.5rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+.visitsAndOthersRowTitleContainer{
+    color: #192a3e;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.visitsAndOthersRowRateContainer{
+    color: #90a0b7;
+}
+.sourceCardContainer {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.behaviourExplorerContainer {
+    border: 1px solid;
+    width: 80%;
+    height: 400px;
+    margin: 1rem 1rem;
+}

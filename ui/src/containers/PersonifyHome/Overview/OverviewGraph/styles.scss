@@ -1,0 +1,126 @@
+.overviewCardContainer {
+    background-color: white;
+    margin-bottom: 3rem;
+}
+.overviewCardHeading {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: rgba(25,42,62,.1);
+    display: flex;
+    margin-left: 1.1rem;
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #192a3e;
+        padding-right: 0.5625rem;
+    }
+}
+.overviewCardFooterContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 97%;
+    margin: auto;
+    padding-bottom: 2rem;
+    .overviewCardFooterFilterAndNoteContainer {
+        display: flex;
+        align-items: baseline;
+        .overviewCardFooterFilter > div:first-child {
+            display: flex;
+            padding: 0.5rem;
+            padding-right: 1rem;
+            border-width: 1px;
+            border-color: rgba(25,42,62,.3);
+            border-style: solid;
+            border-radius: 0.25rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: center;
+            line-height: normal;
+            cursor: pointer;
+            div:last-child {
+                padding-top: .1rem;
+                span {
+                    padding-left: 0.4rem;
+                }
+            }
+            
+        }
+        .overviewCardFooterNote {
+            margin-left:1rem
+        }
+    }
+    .fullReportContainer {
+        cursor: pointer;
+        display: flex;
+        h4 {
+            margin: 0;
+            color:#6b81f7;
+            font-size: 1.2rem;
+            padding-top: 0.1rem;
+        }
+        span {
+            svg {
+                height: 0.9rem;
+                width: 0.9rem;
+                path {
+                    fill:#6b81f7
+                }
+            }
+        }
+    }
+    .fullReportContainer:hover{
+      
+        h4 {
+            color:#92a2f9;
+        }
+        span {
+            svg {
+                path {
+                    fill: #92a2f9
+                }
+            }
+        }
+    }
+}
+
+
+.apexcharts-toolbar {
+    display: none !important;
+}
+.overviewCardFooterFilterForm{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 19.375rem;
+    padding-bottom: 1rem;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform,opacity;
+    transition: all .2s ease-in-out;
+}
+.overviewCardFooterFilterFormIsActive{
+    position: absolute;
+    left: 292px;
+    width: 19.375rem;
+    padding-bottom: 1rem;
+    z-index: 1;
+    backface-visibility: hidden;
+    will-change: transform, opacity;
+    transition: all 0.2s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    border-width: 1px;
+    border-color: rgba(25,42,62,.3);
+    border-style: solid;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.9375rem 0 rgba(25,42,62,.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #fff;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { InfiniteScrollTable } from '@contentstack/venus-components';
+import { InfiniteScrollTable, cbModal } from '@contentstack/venus-components';
 import { useNavigate } from "react-router-dom";
+// import PersonifyModalComponent from '../../../components/PersonifyModalComponent';
 interface MissionTableRow {
   mission: String
   revenue: String
@@ -15,8 +16,9 @@ interface TableProps {
   }
   data: MissionTableRow[]
   totalCounts:Number
+  
 }
-const MissionTable:React.FC<TableProps>  = ({ args, data, totalCounts}) => {
+const MissionTable:React.FC<TableProps>  = ({ args, data, totalCounts }) => {
   const [loading, setLoading] = useState(false)
   const [tableData, setTableData] = useState<MissionTableRow[]>([])
   let [itemStatusMap, setItemStatusMap] = useState({})
@@ -48,7 +50,6 @@ const MissionTable:React.FC<TableProps>  = ({ args, data, totalCounts}) => {
         disableSortBy: true,
       },
     ]
-    let navigate = useNavigate(); 
   const fetchData = () => {
     let itemStatusMap:{[key: number]: string} = {}
     for (let index = 0; index <= 8; index++) {
@@ -65,10 +66,24 @@ const MissionTable:React.FC<TableProps>  = ({ args, data, totalCounts}) => {
     setLoading(false)
     setTableData(data)
   }
-  const onRowClick = (args: any)=>{
-    console.log(args)
-    navigate(`/mission/${args.mission}`);
-  }
+ const navigate = useNavigate()
+  const handleClick = (args: any) => {
+    // console.log('handleClick', args)
+    //     cbModal({
+    //       component: (props:any) => <PersonifyModalComponent {...props} tags={args} />,
+    //       modalProps: {
+    //         onClose,
+    //         onOpen: () => {
+    //           console.log('onOpen gets called')
+    //         },
+    //         size: 'customSize',
+    //       },
+    //       testId: 'cs-modal-storybook',
+    //     })
+     navigate(`/home/${args.mission}`,{state:{args}})
+
+    }
+
     return (
       <InfiniteScrollTable 
         data={tableData}
@@ -80,7 +95,7 @@ const MissionTable:React.FC<TableProps>  = ({ args, data, totalCounts}) => {
         itemStatusMap={itemStatusMap}
         // initialSortBy={[{ id: 'mission', desc: true }]}
         canSearch={args.canSearch}
-        onRowClick={onRowClick}
+        onRowClick={handleClick}
         />
     )
   }

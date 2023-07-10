@@ -1,0 +1,109 @@
+.referrersContainer {
+    height: 100vh;
+    h2 {
+        color: #90a0b7;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+    .Table {
+      border: none;
+      min-height: 0;
+      margin-top: 3rem;
+      background: none;
+    }
+    .Table {
+      > div {
+        > div {
+          height: 100vh;
+          position: relative;
+        }
+      }
+    }
+    .TablePanel {
+      display: none !important;
+  }
+    .Accordion__heading__title{
+      font-size: 14px;
+      line-height: 17px;
+    }
+    .Table__head__row {
+      .Table__head__column:first-child {
+        background-color: #F5F6F8;
+        border-right: 1px solid #E8E9EB;
+        border-left: 1px solid #E8E9EB;
+        width: 36%;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .Table__head__column {
+        background-color: #F5F6F8;
+        border-right: 1px solid #E8E9EB;
+        width: 20%;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .Table__head__column:last-child {
+        background-color: #F5F6F8;
+        border-right: 1px solid #E8E9EB;
+        width: 24%;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+    .Table__body__row:first-of-type{
+      border-top: 1px solid #E8E9EB;
+    }
+    .Table__body__row  {
+      .Table__body__column:first-child {
+        background-color: #FFFFFF;
+        border-right: 1px solid #E8E9EB;
+        border-bottom: 1px solid #E8E9EB;
+        border-left: 1px solid #E8E9EB;
+        align-self: auto;
+        width: 36%;
+        min-width: 0px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .Table__body__column {
+        background-color: #FFFFFF;
+        border-right: 1px solid #E8E9EB;
+        border-bottom: 1px solid #E8E9EB;
+        align-self: auto;
+        width: 20%;
+        min-width: 0px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .Table__body__column:last-of-type {
+        border-right: 1px solid #E8E9EB;
+        background-color: #FFFFFF;
+        align-self: auto;
+        width: 24%;
+        min-width: 0px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+    .Table__head{
+      border: 15px solid #fff;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      padding-bottom: 34px;
+    }
+    .Table__body{
+      border: 15px solid #fff;
+      border-top: none;
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+      height: auto !important;
+    }
+    .Table__body__row--selected {
+      .single-select {
+        background-color: #fff;
+        display: none;
+        box-shadow: none
+    }
+    }
+}

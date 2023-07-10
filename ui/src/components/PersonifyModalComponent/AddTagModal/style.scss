@@ -1,0 +1,37 @@
+.addTagBtn {
+    margin-top: 1rem;
+    width: 100%;
+    background-color: #e9ecfe;
+    border: 1px solid #aab7fb;
+    padding: .7rem 1.4rem;
+    padding: .7rem 1.4rem;
+    color: #92a2f9;
+}
+.addTagInput {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        background-color: transparent;
+        border-style: solid;
+        border-color: transparent;
+        color: #192a3e;
+        font-size: .875rem;
+        line-height: 1.5;
+        cursor: pointer;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        will-change: transform,opacity;
+        transition: all .2s ease-in-out;
+        padding: .5rem 0;
+        border-width: 0 0 1px 0;
+        border-color: rgba(25,42,62,.1);
+}
+
+
+.addTagModal > div{
+    justify-content: end !important;
+}
